@@ -1,0 +1,24 @@
+import math
+position = [0,0]
+while True:
+    n = input('Enter the type movement as up,left,right,down: ')
+    if n == "up":
+        m = int(input("Enter units moved: "))
+        position[1] = position[1] + m
+        print(position)
+    elif n == "down":
+        m= int(input("Enter units moved: "))
+        position[1] = position[1] - m
+        print(position)
+    elif n == "left":
+        m= int(input("Enter units moved: "))
+        position[0] = position[0] - m
+        print(position)
+    elif n == "right":
+        m= int(input("Enter units moved: "))
+        position[0] = position[0] + m
+        print(position)
+    if n == "":
+        break
+
+print("The Final position of the robot is: ",position) 
